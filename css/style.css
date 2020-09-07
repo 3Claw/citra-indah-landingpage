@@ -1,0 +1,357 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600&display=swap');
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: "Montserrat", sans-serif;
+    background: #ffffff;
+    color: #000;
+    font-size: 15px;
+    line-height: 1.5;
+    margin: 0;
+    padding: 0;
+}
+
+h1 {
+    color: #4e4e4e;
+}
+
+a {
+    color: #000000;
+    text-decoration: none;
+}
+
+ul {
+    list-style: none;
+}
+
+/* Header */
+.logo {
+    display: grid;
+    grid-template-columns: repeat(2, 0fr);
+    box-sizing: border-box;
+    align-items: center;
+    justify-content: space-between;
+    padding: 1rem 3rem;
+    overflow: hidden;
+}
+
+.logo .socmed-logo {
+    display: grid;
+    grid-template-columns: repeat(3, 0fr);
+    grid-gap: 1.2rem;
+}
+
+/* Showcase */
+.showcase {
+    width: 100%;
+    padding: 0 3rem;
+}
+
+/* .showcase img {
+    display: grid;
+    padding-bottom: 50px;
+    margin-left: auto;
+    margin-right: auto;
+    width: 85%;
+} */
+
+.showcase-inner {
+    color: #ffffff;
+}
+
+.showcase-inner h1 {
+    color: #ffffff;
+    font-size: 3rem;
+}
+
+.overlay {
+    background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(../assets/img/header-citra-indah.png);
+    background-position: right;
+    background-size: cover;
+    height: 100%;
+    width: auto;
+    padding: 32em 33em 2rem 2rem;
+}
+
+/* cluster */
+.main-content {
+    box-sizing: border-box;
+}
+
+/* about */
+.about {
+    display: flex;
+    flex-direction: row;
+    box-sizing: border-box;
+    padding: 100px 0 50px 0;
+    margin: auto;
+    justify-content: center;
+    align-items: center;
+}
+
+.about-inner {
+    height: 100%;
+    position: relative;
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    align-items: baseline;
+    justify-content: flex-end;
+    text-align: left;
+    margin: auto;
+    max-width: 550px;
+    padding: 5rem 0;
+}
+
+.about-inner h6 {
+    color: #d6d6d6;
+    padding-bottom: 1rem;
+}
+
+.about-inner h1 {
+    color: #4e4e4e;
+    font-size: 3.5rem;
+}
+
+.about-inner p {
+    color: #989696;
+    font-size: 15px;
+}
+
+.about img {
+    display: grid;
+    padding-bottom: 50px;
+    margin-bottom: 20px;
+    margin-left: auto;
+}
+
+/* Thumbnails */
+#container {
+    display: grid;
+    position: relative;
+    grid-template-columns: repeat(3, 1fr);
+    padding: 10px;
+    margin-right: auto;
+}
+
+.thumb__img {
+    width: 100%;
+}
+
+#container a>img {
+    width: 8%;
+}
+
+.thumbnails {
+    text-align: center;
+}
+
+.thumbnails h2 {
+    text-align: center;
+    justify-items: center;
+}
+
+.thumbnails span {
+    margin-left: 1.5em;
+}
+
+.btn {
+    cursor: pointer;
+    display: inline-flex;
+    border: 1.5px solid #000000;
+    padding: .8em;
+    justify-content: center;
+}
+
+.caption {
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    box-sizing: border-box;
+    justify-content: center;
+    justify-items: center;
+    text-align: center;
+    margin: auto;
+    padding: 0.5rem 0 2rem 0;
+}
+
+.caption h6 {
+    color: #d6d6d6;
+    padding-bottom: 2rem;
+    font-size: 1rem;
+}
+
+.caption h1 {
+    color: #4e4e4e;
+    font-size: 3.5rem;
+}
+
+.caption p {
+    color: #989696;
+    font-size: 15px;
+}
+
+/* information */
+.information {
+    background-color: #000;
+    margin: 2rem;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(500px, 1fr));
+}
+
+.information-caption {
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    box-sizing: border-box;
+    justify-content: center;
+    justify-items: center;
+    text-align: center;
+    margin: auto;
+    padding: 5rem 0 2.5rem 0;
+}
+
+.information-caption h1 {
+    color: #4e4e4e;
+    font-size: 3.5rem;
+}
+
+.information-caption p {
+    color: #989696;
+    font-size: 15px;
+}
+
+.whatsapp {
+    display: grid;
+    grid-gap: 25px;
+    margin: 2rem 0;
+}
+
+.contact {
+    padding: 1.5rem;
+    color: #fcfcfc;
+}
+
+.contact h1 {
+    color: #fcfcfc;
+}
+
+.maps img {
+    width: 100%;
+    height: auto;
+}
+
+.contact__note {
+    margin-bottom: 1rem;
+}
+
+.wa-item {
+    display: grid;
+    grid-template-columns: 46px 1fr;
+}
+
+.wa-item img {
+    margin: auto;
+}
+
+footer {
+    padding: 20px;
+    margin-top: 20px;
+    color: #555555;
+    background-color: #ffffff;
+    text-align: center;
+}
+
+/* Media Querry */
+@media (max-width: 480px) {
+    .logo {
+        display: inline-block;
+        padding: 0em 6em;
+    }
+
+    .logo .hero-logo {
+        align-items: center;
+    }
+
+    .logo .socmed-logo {
+        justify-content: center;
+    }
+
+    .showcase {
+        width: 100%;
+    }
+
+    .showcase-inner {
+        display: grid;
+        grid-auto-columns: min-content
+    }
+
+    .showcase-inner h1 {
+        font-size: 2.8rem;
+    }
+
+    .showcase-inner p {
+        font-size: 1em;
+    }
+
+    .overlay {
+        padding: 6em 20em 2rem 2rem;
+        overflow: hidden;
+        background-position: top center;
+    }
+
+    .about img {
+        display: none;
+    }
+
+    .about-inner {
+        display: grid;
+        align-items: center;
+        justify-content: center;
+        text-align: left;
+        margin: auto;
+    }
+
+    .about-inner h6 {
+        font-size: 1rem;
+        text-align: center;
+    }
+
+    .about-inner h1 {
+        font-size: 2.5rem;
+        text-align: center
+    }
+
+    .about-inner p {
+        text-align: center;
+    }
+
+    .caption {
+        display: grid;
+    }
+
+    #container {
+        display: block;
+    }
+
+    .thumbnails {
+        padding-bottom: 1em;
+    }
+
+    .information-caption {
+        padding: 4rem 0 2.5rem 0;
+    }
+
+    .information {
+        margin: 1rem;
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+    }
+
+
+}
